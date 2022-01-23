@@ -145,6 +145,15 @@ nav {
   width: 100%;
 }
 
+.carousel-phone {
+  border-radius: 0.5rem;
+  background-color: #dfe7e3;
+  max-width: 250px;
+}
+.carousel-phone img {
+  border-radius: 0.5rem;
+}
+
 #partners {
   background-color: var(--main-color);
   height: auto;
