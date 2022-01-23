@@ -69,6 +69,14 @@ formulario.addEventListener('submit', (e) => {
 		document.getElementById('message-container').classList.add('message-container-valid');
 		document.getElementById('message-container').classList.remove('message-container-invalid');
 		document.getElementById('message-container').innerHTML ="<span>Demo Request sent succesfully!</span>"
+		
+		let datos = new FormData(formulario);
+
+		fetch('post.php', {
+			method: 'POST',
+			body: datos
+		})
+		
 		formulario.reset();
 		for (camp in campos){
 			campos[camp] = false
